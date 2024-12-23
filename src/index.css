@@ -53,21 +53,22 @@ h3.headtext {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
   display: flex;
 }
 
 .nav {
-  display: inline-block;
+  /* display: inline-block; */
+  width: 150px;
   /* margin: 20px 20px; */
 }
 
-button.navbutt {
-  padding: 20px 0px;
-  width: 8em;
+a.navbutt {
+  padding: 20px 20px;
+  width: 100%;
   font-family: "Afacad Flux", Calibri, sans-serif;
   font-size: large;
-  border-color: #ad93c0;
+  border: 2px outset #ad93c0;
+  text-decoration: none;
   color: #7b5f8f;
   background-color: #f5edf4;
   border-radius: 5px;
@@ -92,7 +93,7 @@ button.navbutt {
 
 /* QUALIFICATIONS */
 #qualifications {
-  margin-top: 40px;
+  margin-top: 20px;
   width: 900px;
   font-size: large;
   max-width: 75%;
@@ -121,11 +122,24 @@ li {
   padding: 30px;
   border: 2px solid #ad93c0;
   border-radius: 10px;
+  margin-top: 20px;
   margin-bottom: 75px;
 }
 
 .prj {
   margin: 10px 0px;
+}
+
+@media screen and (max-width: 875px) {
+  #qualifications {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qual {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 699px) {
@@ -137,18 +151,7 @@ li {
     align-items: center;
     flex-direction: column;
     justify-content:center;
-    gap: 20px;
+    gap: 80px;
     display: flex;
-  }
-
-  #qualifications {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .qual {
-    width: 100%;
-
   }
 }

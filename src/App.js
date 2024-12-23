@@ -18,13 +18,13 @@ const openScreen = (
 const navigation = (
   <div id="navaround">
     <div className="nav">
-      <button className='navbutt'>about me</button>
+      <a className='navbutt' href="#aboutme">about me</a>
     </div>
     <div className="nav">
-      <button className='navbutt'>qualifications</button>
+      <a className='navbutt'  href="#qualifications">qualifications</a>
     </div>
     <div className="nav">
-      <button className='navbutt'>projects</button>
+      <a className='navbutt' href="#projects">projects</a>
     </div>
   </div>
 )
