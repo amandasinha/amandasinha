@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+ }
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: "Afacad Flux", Calibri, sans-serif;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d7cbda;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* On open */
+#root {
+  width: 100%;
+}
+
+#onOpen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2f2834;
+  width: 100%;
+  height: 100vh;
+  color: #d7cbda;
+}
+
+h1.headtext {
+  font-size: xxx-large;
+}
+
+h3.headtext {
+  font-size: x-large;
+}
+
+/* Explore me ;) */
+#navaround {
+  /* margin: 0 20%; */
+  width: 750px;
+  max-width: 75%;
+  height: 100vh;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  display: flex;
+}
+
+.nav {
+  display: inline-block;
+  /* margin: 20px 20px; */
+}
+
+button.navbutt {
+  padding: 20px 0px;
+  width: 8em;
+  font-family: "Afacad Flux", Calibri, sans-serif;
+  font-size: large;
+  border-color: #ad93c0;
+  color: #7b5f8f;
+  background-color: #f5edf4;
+  border-radius: 5px;
+}
+
+#content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ABOUT */
+#aboutme {
+  width: 1000px;
+  font-size: large;
+  max-width: 75%;
+  padding: 30px;
+  border: 2px solid #ad93c0;
+  border-radius: 10px;
+}
+
+/* QUALIFICATIONS */
+#qualifications {
+  margin-top: 40px;
+  width: 900px;
+  font-size: large;
+  max-width: 75%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  gap: 10px
+}
+
+.qual {
+  border: 2px solid #ad93c0;
+  border-radius: 10px;
+  width: 21em;
+  padding: 15px;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* PROJECTS */
+#projects {
+  width: 1000px;
+  font-size: large;
+  max-width: 75%;
+  padding: 30px;
+  border: 2px solid #ad93c0;
+  border-radius: 10px;
+  margin-bottom: 75px;
+}
+
+.prj {
+  margin: 10px 0px;
+}
+
+@media screen and (max-width: 699px) {
+  #navaround {
+    /* margin: 0 20%; */
+    /* width: 750px; */
+    /* max-width: 75%; */
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    gap: 20px;
+    display: flex;
+  }
+
+  #qualifications {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qual {
+    width: 100%;
+
+  }
+}
